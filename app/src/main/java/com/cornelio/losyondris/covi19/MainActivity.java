@@ -14,10 +14,11 @@ import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
-//    FirebaseDatabase database = FirebaseDatabase.getInstance();
-//    DatabaseReference myRef;
+
     //= database.getReference("message");
 int p = 0;
 Context mcontext;
@@ -25,7 +26,7 @@ TextInputLayout cedula, telefono;
 //Button registro;
 SharedPreferences preferences;
 RequestQueue queue;
-
+GPSTracker gps;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +55,19 @@ RequestQueue queue;
                     startActivity(new Intent(MainActivity.this,Sos.class));
                 }
             });
+
+            findViewById(R.id.id_sos).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(MainActivity.this,Sos.class));
+                }
+            });
+
+
+
+
+
+
 
         }else {
             setContentView(R.layout.activity_main);

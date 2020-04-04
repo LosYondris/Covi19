@@ -31,6 +31,8 @@ public class Poo {
         this.recovered = recovered;
     }
 
+
+
     public String getCountry() {
         return country;
     }

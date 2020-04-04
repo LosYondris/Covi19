@@ -8,6 +8,7 @@
     tools:context=".Sos">
 
     <ImageButton
+        android:id="@+id/btn_sosE"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:background="@mipmap/ic_launcher"
