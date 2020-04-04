@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "764616540831",
+    "firebase_url": "https://jackethonitla2020.firebaseio.com",
+    "project_id": "jackethonitla2020",
+    "storage_bucket": "jackethonitla2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764616540831:android:355cbb4d45c3666750d8aa",
+        "android_client_info": {
+          "package_name": "com.cornelio.losyondris.covi19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764616540831-a3t1lfsfr4kbgrglvhddvv6oiiu68qmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGAfXc1YIso8CvB3SazRCktMlxB1frvtY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764616540831-a3t1lfsfr4kbgrglvhddvv6oiiu68qmm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

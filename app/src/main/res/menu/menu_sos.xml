@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/idInsertarf"
+        android:title="Insertar"
+        android:icon="@drawable/icono_menu"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/idInsertar"
+                android:title="Insertar"
+                android:icon="@drawable/icono_prueva"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/uno"
+                android:title="Color 1"
+                android:icon="@drawable/icono_prueva"
+                android:iconTint="#000"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/dos"
+                android:title="Ajustes"
+                android:icon="@drawable/icono_prueva"
+                app:showAsAction="never"/>
+
+            <!--item
+                android:id="@+id/id_salir_anality"
+                android:title="Salir"
+                android:icon="@drawable/icono_salir"
+                app:showAsAction="never"/-->
+
+
+        </menu>
+
+    </item>
+
+
+</menu>
