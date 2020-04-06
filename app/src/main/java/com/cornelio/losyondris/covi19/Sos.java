@@ -29,9 +29,13 @@ public class Sos extends AppCompatActivity {
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference();
     GPSTracker gps;
-
+    Bd_Ajusted bd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+            bd = new Bd_Ajusted(this);
+            if (bd.loanNight()==true){ setTheme(R.style.mythema);
+            }else { setTheme(R.style.AppTheme); }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sos);
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);

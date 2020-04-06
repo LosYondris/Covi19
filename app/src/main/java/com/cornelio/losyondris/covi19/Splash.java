@@ -17,8 +17,14 @@ public class Splash extends AppCompatActivity {
     CircleImageView img;
     TextView tituloLogin;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Bd_Ajusted bd;
+        bd = new Bd_Ajusted(this);
+        if (bd.loanNight()==true){ setTheme(R.style.mythema);
+        }else { setTheme(R.style.AppTheme); }
+
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);

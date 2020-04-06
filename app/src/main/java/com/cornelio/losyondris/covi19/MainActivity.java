@@ -32,9 +32,13 @@ TextInputLayout cedula, telefono;
 SharedPreferences preferences;
 RequestQueue queue;
 GPSTracker gps;
+Bd_Ajusted bd;
 private static final int REQUEST_CODE_ASK_PERMISSIONS = 507;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        bd = new Bd_Ajusted(this);
+        if (bd.loanNight()==true){ setTheme(R.style.mythema);
+        }else { setTheme(R.style.NoAppTheme); }
         super.onCreate(savedInstanceState);
        // setContentView(R.layout.activity_main);
       //  setContentView(R.layout.activity_menu);
