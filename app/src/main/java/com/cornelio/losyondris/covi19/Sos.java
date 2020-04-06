@@ -48,7 +48,7 @@ public class Sos extends AppCompatActivity {
                 String Nombre = "Pedro";
                 Map<String, Object> fd = new HashMap<>();
                 fd.put("Nombre", "myToken");
-               // myRef.child("Token").child(myToken).child(Nombre).setValue(fd);
+                myRef.child("Token").child(myToken).child(Nombre).setValue(fd);
 
 
             }
