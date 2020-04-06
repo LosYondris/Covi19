@@ -1,10 +1,15 @@
 package com.cornelio.losyondris.covi19;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,11 +32,13 @@ TextInputLayout cedula, telefono;
 SharedPreferences preferences;
 RequestQueue queue;
 GPSTracker gps;
+private static final int REQUEST_CODE_ASK_PERMISSIONS = 507;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
        // setContentView(R.layout.activity_main);
       //  setContentView(R.layout.activity_menu);
+        btnpermisos();
 
         final SharedPreferences preferences = getSharedPreferences("Login",MODE_PRIVATE);
         final String precedula = preferences.getString("cedula","?");
@@ -44,7 +51,7 @@ GPSTracker gps;
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(MainActivity.this,Rv.class));
-                    ///finish();
+                    finish();
                     //getSharedPreferences("Login",MODE_PRIVATE).edit().clear().apply();
                 }
             });
@@ -53,6 +60,7 @@ GPSTracker gps;
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(MainActivity.this,Sos.class));
+                    finish();
                 }
             });
 
@@ -60,6 +68,15 @@ GPSTracker gps;
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(MainActivity.this,Sos.class));
+                    finish();
+                }
+            });
+
+            findViewById(R.id.id_postnews).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(MainActivity.this,News.class));
+                    finish();
                 }
             });
 
@@ -77,9 +94,9 @@ GPSTracker gps;
             @Override
             public void onClick(View v) {
                 SavarDatos();
-                Toast.makeText(MainActivity.this,"Registrado",Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this,"Registrado",Toast.LENGTH_LONG).show();
                 startActivity(new Intent(MainActivity.this,Rv.class));
-                //finish();
+                finish();
             }
         });
 
@@ -97,7 +114,6 @@ GPSTracker gps;
         cedula = (TextInputLayout) findViewById(R.id.idCedula);
         telefono = (TextInputLayout) findViewById(R.id.idtelefono);
 
-
         String ced = cedula.getEditText().getText().toString();
         String tel = telefono.getEditText().getText().toString();
         Log.i("TAG","DATO :"+ced+" "+tel);
@@ -110,6 +126,26 @@ GPSTracker gps;
 
     }
 
+
+
+    public void btnpermisos(){
+        //Se realiza la petición de permisos para dispositivos con OS >= 6.0
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED){
+
+            }else{
+                ActivityCompat.requestPermissions(MainActivity.this,new String[]{
+                        Manifest.permission.CALL_PHONE,
+                        Manifest.permission.ACCESS_FINE_LOCATION,
+                        Manifest.permission.ACCESS_COARSE_LOCATION
+                        /* Manifest.permission.CAMERA,*/
+                }, REQUEST_CODE_ASK_PERMISSIONS);
+                return;
+            }
+        }else{
+            // No se necesita requerir permiso, OS menor a 6.0.
+        }
+    }
 
 
 }

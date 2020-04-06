@@ -48,7 +48,6 @@ ArrayList<Poo> pojo;
 
     public void showVista(){
         MyAdapter myAdapter = new MyAdapter(pojo);
-       // adapter = new MyAdapter(pojo);
         rv.setAdapter(myAdapter);
     }
 

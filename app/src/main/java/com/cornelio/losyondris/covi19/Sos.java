@@ -1,8 +1,13 @@
 package com.cornelio.losyondris.covi19;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -37,13 +42,13 @@ public class Sos extends AppCompatActivity {
                 Map<String, Object> f = new HashMap<>();
                 f.put("Lat", gps.latitude);
                 f.put("Log", gps.longitude);
-                myRef.child("Covid19").child(Ids).setValue(f);
+               // myRef.child("GPS").child(Ids).setValue(f);
 
                 String myToken = FirebaseInstanceId.getInstance().getToken();
                 String Nombre = "Pedro";
                 Map<String, Object> fd = new HashMap<>();
                 fd.put("Nombre", "myToken");
-                myRef.child("Token").child(myToken).child(Nombre).setValue(fd);
+               // myRef.child("Token").child(myToken).child(Nombre).setValue(fd);
 
 
             }
@@ -82,5 +87,7 @@ public class Sos extends AppCompatActivity {
         }
         return false;
     }
+
+
 
 }
