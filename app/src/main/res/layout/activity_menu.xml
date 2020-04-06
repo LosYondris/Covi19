@@ -223,9 +223,9 @@
 
                     <TextView
                         android:id="@+id/id_sos"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@mipmap/ic_launcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icono_sos"
                         android:clickable="true"
                         android:foreground="?android:attr/selectableItemBackground"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -257,9 +257,9 @@
 
                     <TextView
                         android:id="@+id/id_postnews"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@mipmap/ic_launcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icono_news"
                         android:clickable="true"
                         android:foreground="?android:attr/selectableItemBackground"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -270,7 +270,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="bottom|center"
-                        android:text="Policia"
+                        android:text="Noticias"
                         android:textSize="16dp"
                         android:textStyle="bold" />
 

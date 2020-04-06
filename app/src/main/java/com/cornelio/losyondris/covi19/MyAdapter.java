@@ -35,7 +35,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     @NonNull
     @Override
     public MyAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item,null,false);
+       // View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item,null,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.post,null,false);
        // ViewHolder holder = new ViewHolder(view);
         return new ViewHolder(view);
     }
@@ -54,7 +55,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 .apply( new RequestOptions().override(240,240))
                 .placeholder(R.drawable.ic_launcher_background).into(holder.vanderaImg);
 
-        holder.dialogo.setOnClickListener(new View.OnClickListener() {
+        holder.muerto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(holder.context,"Pais :"+pojo.getCountry(),Toast.LENGTH_LONG).show();
@@ -89,11 +90,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 Dialog bbx= builder.create();
                 bbx.show();
 
-
-
-
-
-
                 }
         });
     }
@@ -106,8 +102,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        CircleImageView vanderaImg;
-       // ImageView vanderaImg;
+       // CircleImageView vanderaImg;
+        ImageView vanderaImg;
         TextView pais,muerto,curado,infectado;
         Context context;
         LinearLayout dialogo;
