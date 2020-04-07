@@ -5,6 +5,7 @@
         <attr name="tintcolor" format="color"/>
         <attr name="botonRedondo" format="color"/>
         <attr name="fondocolor" format="color"/>
+        <attr name="iconos" format="color"/>
 
 
     </declare-styleable>

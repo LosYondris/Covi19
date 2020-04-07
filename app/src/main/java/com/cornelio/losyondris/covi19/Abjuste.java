@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.Window;
 import android.widget.CompoundButton;
 import android.widget.Switch;
@@ -27,7 +29,7 @@ public class Abjuste extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abjuste);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         sw = (Switch) findViewById(R.id.btnThema);
         ///AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES
@@ -54,6 +56,32 @@ public class Abjuste extends AppCompatActivity {
 
 
     }
+
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_rv,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case android.R.id.home:
+                startActivity(new Intent(Abjuste.this,MainActivity.class));
+                break;
+            case R.id.uno:
+                break;
+            case R.id.dos:
+                break;
+
+        }
+
+        return true;
+    }
+
 
 
     private void retarApp() {
