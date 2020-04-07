@@ -50,6 +50,7 @@ public class News extends AppCompatActivity implements  SwipeRefreshLayout.OnRef
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         recyclerView = findViewById(R.id.rvNews);
         layoutManager = new LinearLayoutManager(News.this);
@@ -111,5 +112,30 @@ public class News extends AppCompatActivity implements  SwipeRefreshLayout.OnRef
     public void onRefresh() {
         LoadJson();
     }
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_rv,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case android.R.id.home:
+                startActivity(new Intent(News.this,MainActivity.class));
+                break;
+            case R.id.uno:
+                break;
+            case R.id.dos:
+                break;
+
+        }
+
+        return true;
+    }
+
 }
 

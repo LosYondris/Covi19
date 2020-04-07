@@ -9,16 +9,17 @@
     tools:context=".Servicios">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:padding="10dp"
         android:gravity="center"
         tools:ignore="MissingConstraints">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/nueve"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             app:cardCornerRadius="10dp"
             android:layout_margin="5dp">
 
@@ -28,13 +29,13 @@
                 android:gravity="center"
                 android:drawableTop="@drawable/icono_tel"
                 android:text="911"
-                android:textSize="30dp"
+                android:textSize="20dp"
                 android:textStyle="bold"/>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             app:cardCornerRadius="10dp"
             android:layout_margin="5dp">
 
@@ -45,13 +46,13 @@
                 android:gravity="center"
                 android:drawableTop="@drawable/icono_tel"
                 android:text="*462"
-                android:textSize="30dp"
+                android:textSize="20dp"
                 android:textStyle="bold"/>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             app:cardCornerRadius="10dp"
             android:layout_margin="5dp">
 
@@ -62,7 +63,7 @@
                 android:gravity="center"
                 android:drawableTop="@drawable/icono_tel"
                 android:text="*311"
-                android:textSize="30dp"
+                android:textSize="20dp"
                 android:textStyle="bold"/>
         </androidx.cardview.widget.CardView>
 
