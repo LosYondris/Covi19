@@ -378,6 +378,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/id_servicio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/icono_llamada"
