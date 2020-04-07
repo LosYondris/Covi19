@@ -74,8 +74,9 @@ public class News extends AppCompatActivity implements  SwipeRefreshLayout.OnRef
     public  void  LoadJson(){
         ApiInterface apiInterface = ApiClient.getApiCliente().create(ApiInterface.class);
         String country = Utils.getCountry();
+        String query = "Coronavirus";
         Call<New> call;
-        call = apiInterface.getNews(country, API_KEY);
+        call = apiInterface.getNews(query, API_KEY);
 
         call.enqueue(new Callback<New>() {
             @Override
