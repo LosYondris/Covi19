@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Coronavirus Helper</string>
+    <string name="app_name">CovidHelper</string>
+    <string name="app_title">Coronaviru 2019</string>
 </resources>
