@@ -62,50 +62,6 @@
             android:gravity="center"
             android:text="@string/app_title"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:gravity="center"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:background="@drawable/virus"
-                android:paddingLeft="5dp"/>
-
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:background="@drawable/virus"
-                android:paddingLeft="5dp"/>
-
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:background="@drawable/virus"
-                android:padding="5dp"/>
-
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:background="@drawable/virus"
-                android:padding="5dp"/>
-
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:background="@drawable/virus"
-                android:padding="5dp"/>
-
-
-
-
-        </LinearLayout>
-
-
-
-
-
 
     </LinearLayout>
 
@@ -160,7 +116,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="bottom|center"
-                        android:text="Estadistica"
+                        android:text="Estadisticas"
                         android:textSize="16dp"
                         android:textStyle="bold" />
 
@@ -426,7 +382,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="bottom|center"
-                        android:text="Adjuste"
+                        android:text="Ajustes"
                         android:textSize="16dp"
                         android:textStyle="bold" />
 
