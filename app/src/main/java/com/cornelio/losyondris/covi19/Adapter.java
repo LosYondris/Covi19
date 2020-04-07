@@ -41,7 +41,7 @@ public class Adapter extends RecyclerView.Adapter <Adapter.MyViewHolder>{
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.item, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.post, parent, false);
         return new MyViewHolder(view, onItemClickListener);
     }
 
@@ -115,7 +115,7 @@ public class Adapter extends RecyclerView.Adapter <Adapter.MyViewHolder>{
             published_ad = itemView.findViewById(R.id.publishedAt);
             source = itemView.findViewById(R.id.source);
             time = itemView.findViewById(R.id.time);
-            imageView = itemView.findViewById(R.id.img);
+            imageView = itemView.findViewById(R.id.vandera);
             progressBar = itemView.findViewById(R.id.prograss_load_photo);
 
             this.onItemClickListener = onItemClickListener;

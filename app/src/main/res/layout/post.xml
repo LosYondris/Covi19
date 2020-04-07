@@ -43,22 +43,24 @@
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/pais"
+                android:id="@+id/author"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:drawablePadding="10dp"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:textColor="@android:color/white"
-                android:singleLine="true"
-                android:layout_marginRight="160dp"
-                android:text="Author"
-                android:gravity="bottom"
-                android:layout_alignLeft="@+id/title"
                 android:layout_alignStart="@+id/title"
-                android:layout_alignRight="@id/layoutDate"
+                android:layout_alignLeft="@+id/title"
                 android:layout_alignTop="@+id/layoutDate"
                 android:layout_alignEnd="@id/layoutDate"
+                android:layout_alignRight="@id/layoutDate"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="164dp"
+                android:layout_marginRight="164dp"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Author"
+                android:textColor="@android:color/white"
                 tools:ignore="UnknownId" />
 
             <FrameLayout
@@ -80,7 +82,7 @@
                     android:layout_marginRight="5dp" />
                 <TextView
                     android:textColor="#606060"
-                    android:id="@+id/id_curado"
+                    android:id="@+id/publishedAt"
                     android:layout_marginLeft="27dp"
                     android:layout_marginRight="10dp"
                     android:text="01 January 1990"
@@ -104,14 +106,14 @@
                 android:textSize="17sp"
                 android:layout_marginTop="10dp"
                 android:layout_below="@id/vandera"
-                android:id="@+id/infectado" />
+                android:id="@+id/title" />
 
 
             <TextView
                 android:id="@+id/desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/infectado"
+                android:layout_below="@id/title"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
@@ -119,7 +121,7 @@
                 />
 
             <TextView
-                android:id="@+id/id_muerto"
+                android:id="@+id/source"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
                 android:layout_below="@id/desc"
@@ -143,7 +145,7 @@
                 android:layout_below="@id/desc"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_toRightOf="@id/id_muerto"
+                android:layout_toRightOf="@id/source"
                 android:maxLines="1"
                 android:drawablePadding="10dp"
                 android:singleLine="true"
