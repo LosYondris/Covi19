@@ -88,9 +88,9 @@ private static final int REQUEST_CODE_ASK_PERMISSIONS = 507;
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(MainActivity.this,Abjuste.class));
-                    finish();
                 }
             });
+
 
 
 

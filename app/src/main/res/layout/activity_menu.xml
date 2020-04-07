@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="?attr/iconos"
     tools:context=".MainActivity">
 <!--    android:background="@color/colorPrimary"-->
 
@@ -28,7 +28,7 @@
             android:fontFamily="@font/alfa_slab_one"
             android:gravity="center"
             android:text="@string/app_name"
-            android:textColor="@color/colorPrimary"
+            android:textColor="?attr/iconos"
             android:textSize="80dp" />
 
 
@@ -183,15 +183,15 @@
                 tools:ignore="MissingConstraints">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:background="@mipmap/ic_launcher"
+                        android:background="@drawable/icono_perfil"
                         android:clickable="true"
                         android:foreground="?android:attr/selectableItemBackground"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -202,7 +202,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="bottom|center"
-                        android:text="Sos"
+                        android:text="Perfil"
                         android:textSize="16dp"
                         android:textStyle="bold" />
 
@@ -300,14 +300,14 @@
                 tools:ignore="MissingConstraints">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@mipmap/ic_launcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icono_llamada"
                         android:clickable="true"
                         android:foreground="?android:attr/selectableItemBackground"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -316,9 +316,9 @@
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:gravity="bottom|center"
-                        android:text="Bombero"
+                        android:text="Servicios"
                         android:textSize="16dp"
                         android:textStyle="bold" />
 

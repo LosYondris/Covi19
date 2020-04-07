@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Abjuste"></activity>
+        <activity android:name=".Abjuste" />
         <activity android:name=".News" />
         <activity
             android:name=".Sos"
-            android:theme="@style/NoAppTheme" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".Splash"
             android:theme="@style/NoAppTheme">
@@ -34,10 +34,10 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

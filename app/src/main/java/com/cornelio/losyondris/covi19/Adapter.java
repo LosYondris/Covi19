@@ -130,7 +130,8 @@ public class Adapter extends RecyclerView.Adapter <Adapter.MyViewHolder>{
 
 
 
-
+    //
+//
 // private List<Article> articles;
 // private Context context;
 // private OnItemClickListener onItemClickListener;
