@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowAnimationStyle">@style/WindoAnimaion</item>
         <item name="iconos">@color/colorPrimary</item>
+        <item name="textColor">@color/colorPrimary</item>
     </style>
 
     <style name="NoAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -23,14 +24,14 @@
 
     <!-- Base application theme. -->
     <style name="mythema">
-        <item name="colorPrimary">@color/md_yellow_900</item>
-        <item name="colorPrimaryDark">@color/md_yellow_900</item>
-        <item name="colorAccent">@color/md_yellow_900</item>
-        <item name="textColor">@color/md_grey_900</item>
-        <item name="tintcolor">@color/md_grey_900</item>
-        <item name="botonRedondo">@color/md_yellow_900</item>
-        <item name="fondocolor">@color/md_yellow_900</item>
-        <item name="iconos">@color/md_yellow_900</item>
+        <item name="colorPrimary">#9b2a28</item>
+        <item name="colorPrimaryDark">#9b2a28</item>
+        <item name="colorAccent">#9b2a28</item>
+        <item name="textColor">@color/colorBlanco</item>
+        <item name="tintcolor">#9b2a28</item>
+        <item name="botonRedondo">#9b2a28</item>
+        <item name="fondocolor">#9b2a28</item>
+        <item name="iconos">#9b2a28</item>
         <item name="android:windowAnimationStyle">@style/WindoAnimaion</item>
     </style>
 
