@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">CovidHelper</string>
     <string name="app_title">Cuarentena 2020</string>
+    <string name="main_disclaimer">Esta información se almacenará en su dispositivo y solo será utilizada para solicitar ayuda en caso de emergencia.</string>
+    <string name="main_disclaimer_ajustes">Puede cambiar esta información en cualquier momento en el menú de Ajustes.</string>
+
 </resources>
