@@ -32,6 +32,11 @@ RecyclerView rv;
 ArrayList<Poo> pojo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Bd_Ajusted bd;
+        bd = new Bd_Ajusted(this);
+        if (bd.loanNight()==true){ setTheme(R.style.mythema);
+        }else { setTheme(R.style.AppTheme); }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rv);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
