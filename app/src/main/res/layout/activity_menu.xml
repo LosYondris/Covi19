@@ -13,7 +13,7 @@
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="200dp"
         android:background="@drawable/header_covid_sos"
         android:gravity="center"
         android:orientation="vertical"
@@ -75,7 +75,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9">
+        app:layout_constraintVertical_bias="0.759">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -93,6 +93,7 @@
                 android:layout_width="100dp"
                 android:layout_height="120dp"
                 android:layout_margin="2dp"
+                android:elevation="@dimen/cardview_default_elevation"
                 android:foregroundGravity="center"
                 tools:ignore="MissingConstraints">
 
@@ -132,11 +133,13 @@
                 tools:ignore="MissingConstraints">
 
                 <LinearLayout
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/id_Map"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:clickable="true"

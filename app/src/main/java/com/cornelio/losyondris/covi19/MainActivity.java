@@ -98,7 +98,12 @@ private static final int REQUEST_CODE_ASK_PERMISSIONS = 507;
                 }
             });
 
-
+            findViewById(R.id.id_Map).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(MainActivity.this,Map.class));
+                }
+            });
 
 
 
