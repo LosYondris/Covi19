@@ -1,5 +1,8 @@
+
 CovidHelper
 HackathonItla2020
+
+![Presentación1](https://user-images.githubusercontent.com/10002517/78996530-c3a1a580-7b12-11ea-89b5-3805de0818b4.jpg)
 
 
 Integrantes:
