@@ -1,5 +1,5 @@
-# Covi19
-JackethonItla2020
+CovidHelper
+HackathonItla2020
 
 
 Integrantes:
